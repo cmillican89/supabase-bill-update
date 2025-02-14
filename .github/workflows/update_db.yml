@@ -1,8 +1,9 @@
 name: Run Supabase Script
 
 on:
+  workflow_dispatch:  # Allows manual runs
   schedule:
-    - cron: "0 */12 * * *"  # Runs every 12 hours
+    - cron: "0 */6 * * *"  # Runs every 6 hours
 
 jobs:
   run-script:
@@ -16,4 +17,4 @@ jobs:
       - name: Install dependencies
         run: pip install supabase-py
       - name: Run script
-        run: python billupdate.py
+        run: python billupdatesupabase.py
