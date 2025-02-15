@@ -1,0 +1,33 @@
+name: Update PostgreSQL Database
+
+on:
+  workflow_dispatch:  # Allows manual triggering
+  schedule:
+    - cron: "0 */12 * * *"  # Runs every 12 hours
+
+jobs:
+  update-database:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install psycopg2-binary  # Ensures PostgreSQL support
+
+      - name: Run PostgreSQL update script
+        env:
+        DB_HOST: ${{ secrets.DB_HOST }}
+        DB_PORT: ${{ secrets.DB_PORT }}
+        DB_NAME: ${{ secrets.DB_NAME }}
+        DB_USER: ${{ secrets.DB_USER }}
+        DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+  run: python billupdatepostgres.py
+

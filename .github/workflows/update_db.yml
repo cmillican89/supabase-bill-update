@@ -17,4 +17,4 @@ jobs:
       - name: Install dependencies
         run: pip install supabase
       - name: Run script
-        run: python billupdatesupabase.py
+        run: python billupdatepostgres.py

@@ -7,8 +7,8 @@ import os
 DB_HOST = "64.23.139.80"  # Example: db-postgresql-nyc1-12345-do-user-7890.db.ondigitalocean.com
 DB_PORT = "5432"  # Default for Digital Ocean's PostgreSQL
 DB_NAME = "tst"
-DB_USER = "orpheus.gaur"
-DB_PASSWORD = "FOcZKr8ATjGmPe{"
+DB_USER = "src_sa"
+DB_PASSWORD = "7lM-n66@d~twaQs"
 
 # LegiScan API Key
 API_KEY = "4baa43fdd1e5d427a54674140afc2699"
