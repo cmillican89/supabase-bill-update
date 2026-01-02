@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+print("")# -*- coding: utf-8 -*-
 """
 Created on Tue Feb 11 23:09:15 2025
 

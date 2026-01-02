@@ -26,10 +26,38 @@ def get_bill_id(state, bill_number):
         return None
 
 # Example usage
-state = 'MN'
-bill_number = 'SF271'
+state = 'WI'
+bill_number = 'AB103'
 bill_id = get_bill_id(state, bill_number)
 if bill_id:
      print(f'✅ Bill ID for {state} {bill_number}: {bill_id}')
-    
 
+state = 'WI'
+bill_number = 'SB120'
+bill_id = get_bill_id(state, bill_number)
+if bill_id:
+     print(f'✅ Bill ID for {state} {bill_number}: {bill_id}')
+
+state = 'WI'
+bill_number = 'SB734'
+bill_id = get_bill_id(state, bill_number)
+if bill_id:
+     print(f'✅ Bill ID for {state} {bill_number}: {bill_id}')
+
+state = 'WI'
+bill_number = 'AB546'
+bill_id = get_bill_id(state, bill_number)
+if bill_id:
+     print(f'✅ Bill ID for {state} {bill_number}: {bill_id}')
+
+state = 'WI'
+bill_number = 'AB718'
+bill_id = get_bill_id(state, bill_number)
+if bill_id:
+     print(f'✅ Bill ID for {state} {bill_number}: {bill_id}')
+
+state = 'WI'
+bill_number = 'SB553'
+bill_id = get_bill_id(state, bill_number)
+if bill_id:
+     print(f'✅ Bill ID for {state} {bill_number}: {bill_id}')
