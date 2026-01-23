@@ -3,7 +3,7 @@ name: Run Supabase Script
 on:
   workflow_dispatch:  # Allows manual triggering
   schedule:
-    - cron: "0 */12 * * *"  # Runs every 12 hours
+    - cron: "0 1 * * 1-5"
 
 jobs:
   run-script:
