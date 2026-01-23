@@ -26,43 +26,25 @@ def get_bill_id(state, bill_number):
         return None
 
 # Example usage
-state = 'IN'
-bill_number = 'SB0088'
+state = 'AZ'
+bill_number = 'HB2266'
 bill_id = get_bill_id(state, bill_number)
 if bill_id:
      print(f'✅ Bill ID for {state} {bill_number}: {bill_id}')
-state = 'IN'
-bill_number = 'HB1389'
+state = 'AZ'
+bill_number = 'HB2249'
 bill_id = get_bill_id(state, bill_number)
 if bill_id:
      print(f'✅ Bill ID for {state} {bill_number}: {bill_id}')
      
-state = 'IN'
-bill_number = 'HB1232'
+state = 'AZ'
+bill_number = 'HCR2010'
 bill_id = get_bill_id(state, bill_number)
 if bill_id:
      print(f'✅ Bill ID for {state} {bill_number}: {bill_id}')
 
-state = 'IN'
-bill_number = 'HB1316'
-bill_id = get_bill_id(state, bill_number)
-if bill_id:
-     print(f'✅ Bill ID for {state} {bill_number}: {bill_id}')
-
-state = 'IN'
-bill_number = 'HB1086'
-bill_id = get_bill_id(state, bill_number)
-if bill_id:
-     print(f'✅ Bill ID for {state} {bill_number}: {bill_id}')
-
-state = 'IN'
-bill_number = 'HB1106'
-bill_id = get_bill_id(state, bill_number)
-if bill_id:
-     print(f'✅ Bill ID for {state} {bill_number}: {bill_id}')
-
-state = 'IN'
-bill_number = 'SB0138'
+state = 'AZ'
+bill_number = 'SB1025'
 bill_id = get_bill_id(state, bill_number)
 if bill_id:
      print(f'✅ Bill ID for {state} {bill_number}: {bill_id}')
