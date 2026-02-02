@@ -26,15 +26,11 @@ def get_bill_id(state, bill_number):
         return None
 
 # Example usage
-state = 'KS'
-bill_number = 'HB2034'
+state = 'NH'
+bill_number = 'CACR28'
 bill_id = get_bill_id(state, bill_number)
 if bill_id:
      print(f'✅ Bill ID for {state} {bill_number}: {bill_id}')
      
-state = 'KS'
-bill_number = 'HB2426'
-bill_id = get_bill_id(state, bill_number)
-if bill_id:
-     print(f'✅ Bill ID for {state} {bill_number}: {bill_id}')
+
 
